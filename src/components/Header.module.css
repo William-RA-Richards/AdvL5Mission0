@@ -1,0 +1,113 @@
+.header {
+  background-color: lightgray;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companyHeader {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu li {
+  padding: 8px;
+  margin-top: 1px;
+}
+
+.menu li:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+  overflow: hidden;
+  height: 28px;
+  width: 32px;
+}
+
+.dropdown .dropBtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0px; /* Important for vertical align on mobile phones */
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  right: 0px;
+  list-style: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdownContent li {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdownContent li:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.login {
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.companyLogo {
+  border-radius: 30px;
+  width: 5vh;
+  height: 5vh;
+  overflow: hidden;
+  margin-left: 2px;
+}
+
+.companyName {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+  }
+}

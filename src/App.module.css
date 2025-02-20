@@ -1,0 +1,79 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroPic {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://img.freepik.com/premium-photo/serious-businessman-background-office-business-people_252847-16571.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.searchBar {
+  width: 60%;
+  margin: 5%;
+}
+
+.searchInput {
+  width: 80%;
+  height: 60px;
+}
+
+.searchBtn {
+  width: 20%;
+  height: 60px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
+.projectSection {
+  width: 90vw;
+}
+
+.projectSpace {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectSpace {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projectSpace {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projectSpace {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heroPic {
+    height: 40vh;
+  }
+  .searchInput {
+    display: block;
+    width: 90%;
+  }
+  .searchBtn {
+    width: 90%;
+  }
+  .projectSpace {
+    grid-template-columns: 1fr;
+  }
+}
