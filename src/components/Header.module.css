@@ -93,8 +93,8 @@
 
 .companyLogo {
   border-radius: 30px;
-  width: 5vh;
-  height: 5vh;
+  width: 30px;
+  height: 30px;
   overflow: hidden;
   margin-left: 2px;
 }
@@ -109,5 +109,9 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 5px;
+  }
+
+  .companyName {
+    font-size: 14px;
   }
 }

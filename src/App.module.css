@@ -17,9 +17,16 @@
   flex-wrap: wrap;
 }
 
+.heroTitle {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .heroH1 {
   font-size: 60px;
   color: white;
+  width: 40%;
 }
 
 .searchBar {
@@ -93,6 +100,7 @@
   }
   .heroH1 {
     text-align: center;
+    width: 70%;
   }
   .searchInput {
     display: block;
