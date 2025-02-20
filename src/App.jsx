@@ -14,6 +14,9 @@ function App() {
           <input type="text" className={styles.searchInput} />
           <button className={styles.searchBtn}>Search</button>
         </form>
+        <h1 className={styles.heroH1}>
+          Welcome to your start in Serious Business!
+        </h1>
       </div>
 
       <div className={styles.projectSection}>
