@@ -42,11 +42,15 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .image {
+    height: 60%;
+  }
   .cardInfo h2 {
     font-size: 16px;
   }
   .cardInfo {
     font-size: 12px;
+    height: 40%;
   }
 }
 
@@ -59,16 +63,19 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
   .cardInfo h2 {
     font-size: 14px;
   }
   .cardInfo {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .cardInfo h2 {
+    font-size: 20px;
+  }
   .cardInfo {
     font-size: 16px;
   }

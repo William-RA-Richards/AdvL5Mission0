@@ -7,7 +7,7 @@ export default function Header() {
   const [screenSize, setScreenSize] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth < 620) {
       setScreenSize(true);
     } else {
       setScreenSize(false);
@@ -29,17 +29,17 @@ export default function Header() {
               <FontAwesomeIcon icon={faBars} size="2x" />
             </button>
             <ul className={styles.dropdownContent}>
-              <li>Menu 1</li>
-              <li>Menu 2</li>
-              <li>Menu 3</li>
+              <li>Home</li>
+              <li>Contact Us</li>
+              <li>Products</li>
               <li>Login</li>
             </ul>
           </div>
         ) : (
           <ul>
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>Products</li>
             <li className={styles.login}>Login</li>
           </ul>
         )}
